@@ -1,0 +1,32 @@
+{
+  "name": "mime-icon-generator",
+  "version": "0.9.0",
+  "main": "mime-icon-generator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erikyo/mime-icon-generator"
+  },
+  "author": {
+    "name": "Codekraft Studio - info@codekraft.it"
+  },
+  "homepage": "https://github.com/erikyo/mime-icon-generator",
+  "license": "MIT",
+  "style": "./mime-icons.css",
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "cssnano": "^3.5.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-header": "^1.7.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-util": "^3.0.7",
+    "gulp-watch-sass": "^1.2.4",
+    "run-sequence": "^2.1.0"
+  },
+  "spm": {
+    "main": "./mime-icons.css"
+  }
+}
