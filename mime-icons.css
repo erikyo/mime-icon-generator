@@ -1,4 +1,14 @@
 @charset "UTF-8";
+
+/*!
+ * mime-icon-generator -https://github.com/erikyo/mime-icon-generator
+ * Version - 0.9.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2017 Codekraft Studio - info@codekraft.it
+ */
+
+@charset "UTF-8";
 .demo {
   background-color: rgba(0, 0, 0, 0.1);
   padding: 40px; }
@@ -14,9 +24,8 @@
       position: absolute;
       top: 37.03704px;
       display: block;
-      overflow: visible;
       width: 100%;
-      Height: 100%;
+      overflow: visible;
       z-index: 9;
       content: '';
       font-family: 'Material Icons';
@@ -31,13 +40,13 @@
       background-size: 80%;
       background-position: center;
       background-repeat: no-repeat;
-      background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#009688" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5"></text><polygon fill="#00fce4" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+      background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#888" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5"></text><polygon fill="#bbbbbb" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
   .mime-icon .ico-magenta:after {
     background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#d9006c" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5"></text><polygon fill="#ff409f" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
   .mime-icon .ico-yellow:after {
     background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#f9ca15" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5"></text><polygon fill="#fce178" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
   .mime-icon .ico-blue:after {
-    background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#0d75dd" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">ABC</text><polygon fill="#5ba8f5" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+    background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#0d75dd" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5"></text><polygon fill="#5ba8f5" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
   .mime-icon i.material-icons {
     position: absolute;
     top: 33%;
@@ -489,6 +498,7 @@
   background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#FFC107" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/> <polygon display="inline" opacity="0.8" fill="#F1F2F2" points="79.8,72.9 125.8,98.2 79.5,122.8 "/> <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">WMV</text><polygon fill="#ffdb6d" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
 
 .mime-icon.white .ico:after {
+  -webkit-filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.25));
   filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.25)); }
 
 .mime-icon.white.mp3 .ico:after {
@@ -540,6 +550,7 @@
   background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#3a3b3c" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/> <path display="inline" opacity="0.8" fill="#F1F2F2" d="M50.2,70.6v7.5h99.2v-7.5H50.2z M50.2,93v7.5h99.2V93H50.2z M50.2,115.4v7.5h49.6v-7.5 H50.2z"/> <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#ddd" font-family="Tahoma-Bold" style="font-family: Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">PHP</text><polygon fill="#515ea3" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
 
 .mime-icon.double .ico:after {
+  -webkit-filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.2));
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.2)); }
 
 .mime-icon.double.avi .ico:after {
@@ -565,5 +576,3 @@
 
 .mime-icon.double.wmv .ico:after {
   background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#8BC34A" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/> <polygon display="inline" opacity="0.8" fill="#F1F2F2" points="79.8,72.9 125.8,98.2 79.5,122.8 "/> <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#f1f2f2" font-family="Tahoma-Bold" style="font-family: Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">WMV</text><polygon fill="#3a3b3c" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
-
-/*# sourceMappingURL=mime-icons.css.map */

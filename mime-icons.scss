@@ -51,7 +51,7 @@ $zip: "\E3E7";
 // icons to generate
 
 // icon with google font icons
-$list2:
+$font-icon-list:
 (test2, aac,  "", $audio),
 (test2, abw,  "", $music),
 (test2, arc,  "", $photo),
@@ -98,6 +98,7 @@ $list2:
 (test3, jar,  "", $locked),
 (test3, js,  "", $malware),
 (test3, txt,  "", $text);
+
 $icon-color: #F1F2F2;
 $font-size: 39.5;
 
@@ -110,7 +111,7 @@ $gear-icon: '<path display="inline" opacity="0.8" fill="#{$icon-color}" d="M123.
 $image-icon: '<path fill="#F1F1F1" d="M129.7,119.1V72.9c0-3.6-3-6.6-6.6-6.6H76.9c-3.6,0-6.6,3-6.6,6.6v46.2c0,3.6,3,6.6,6.6,6.6h46.2 C126.7,125.7,129.7,122.8,129.7,119.1z M88.4,101l8.3,9.9L108.3,96l14.9,19.8H76.9L88.4,101z"/>';
 
 // icon with svg
-$list:
+$svg-icons-list:
 (test, aac, $music-icon),
 (test, abw, ""),
 (test, arc, ""),
@@ -142,7 +143,7 @@ $list:
 // $text-color: the color of the text containing file extension (A color is expected)
 // $icon: inject an icon inside the document model
 
-@mixin do-icon($background-color, $edge-color:null, $text:null, $text-color:"#F1F2F2", $icon:null ) {
+@mixin do-icon($background-color: #888, $edge-color:null, $text:null, $text-color:"#F1F2F2", $icon:null ) {
 	
 	@if (type-of($edge-color) != 'color') { $edge-color: lighten($background-color, 20%)}
 	@if (type-of($text-color) != 'color') { $text-color: "#F1F2F2"}
@@ -170,9 +171,8 @@ $icon-container-size: 100px;
 			position: absolute;
 			top: $icon-container-size / 2.7;
 			display:block;
-			overflow: visible;
 			width:100%;
-			Height:100%;
+			overflow: visible;
 			z-index:9;
 			content:'';
 			font-family: 'Material Icons';
@@ -191,14 +191,14 @@ $icon-container-size: 100px;
 			background-size: 80%;
 			background-position: center;
 			background-repeat: no-repeat;
-			@include do-icon(#009688);
+			@include do-icon();
 		}
 	}
 	
 
 	.ico-magenta:after { @include do-icon(#d9006c);}
 	.ico-yellow:after {	@include do-icon(#f9ca15);}
-	.ico-blue:after { @include do-icon(#0d75dd, "", "ABC");}
+	.ico-blue:after { @include do-icon(#0d75dd);}
 	
 	i.material-icons {
 		position: absolute;
@@ -219,7 +219,7 @@ $icon-container-size: 100px;
 $colors-number: length($icon-colours);
 $actual-icon-color: 1;
 
-@each $mimitype, $filetype, $icon in $list {
+@each $mimitype, $filetype, $icon in $svg-icons-list {
 
 	  .mime-icon.#{$mimitype}.#{$filetype} .ico:after {
 			@include do-icon(nth($icon-colours, $actual-icon-color), "", to-upper-case($filetype), "", $icon );
@@ -243,7 +243,7 @@ $actual-icon-color: 1;
 $colors-number: length($icon-colours);
 $actual-icon-color: 1;
 
-@each $mimitype, $filetype, $icon-background-color, $icon in $list2 {
+@each $mimitype, $filetype, $icon-background-color, $icon in $font-icon-list {
 		
 	@if (type-of($icon-background-color) != 'color') {  // if background isn't a color
 		$icon-background-color: nth($icon-colours, $actual-icon-color); // the color is a color from the $icon-colours array

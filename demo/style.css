@@ -40,6 +40,15 @@ p {
 	text-align:justify;
 	line-height:1.6;
 }
+hr {
+	border: 0;
+	border-top: 2px solid #ddd;
+}
+pre { 
+	margin:0;
+	max-width:100%;
+	display:block;
+}
 code {
 	display: inline-block;
 	text-align:left;
@@ -49,6 +58,13 @@ code {
 	border: 1px solid #48726d;
 	padding: 12px 24px;
 	margin: 16px 12px 32px;
+}
+pre.small code {
+	margin: 12px 0;
+	padding: 8px 24px;
+	background: #dcdcdc;
+	border: 1px solid #cccccc;
+	color: #738481;
 }
 p code {
 	background: #999;

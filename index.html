@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>mime-icon-generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="mime-icons.css">
 </head>
 <body>
@@ -20,22 +21,8 @@
 			&lt;/div&gt;
 		</code>
 		<div class="demo">
-			<h5>Default</h5>
-			<div class="mime-icon">
-				<div class="ico"></div>
-			</div>
-			<div class="mime-icon">
-				<div class="ico ico-magenta"></div>
-			</div>
-			<div class="mime-icon">
-				<div class="ico ico-yellow"></div>
-			</div>
-			<div class="mime-icon">
-				<div class="ico ico-blue"></div>
-				<i class="material-icons">assistant_photo</i>
-			</div>
-			<br/>
-			<h5>Original with proportional lines</h5>
+			<h4>Original with proportional lines</h4>
+			<p style="text-align:center">use this if you need to create svg shapes to place inside the icon</p>
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
 				<g id="icon">
 					<path fill="#cccccc" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>
@@ -77,10 +64,47 @@
 				<polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/>
 				<polygon fill="#aaaaaa" points="112.6,0 171,58.3 112.6,58.3"/>
 			</svg>
-			<br/>
+			<br/><br/><br/>
+			<hr>
 			
-			<h5>With file extension option</h5>
-			<pre><code>@include do-icon(#05ad9d, &quot;&quot;, &quot;ABC&quot; );</code></pre>
+			<h4>Default</h4>
+			<pre class="small" style="width:100%"><code>@include do-icon($color);</code></pre>
+			<pre class="small" style="width:100%"><code>&lt;div class=&quot;mime-icon&quot;&gt;
+&nbsp;&nbsp;&lt;div class=&quot;ico ico-blue&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+			<div class="mime-icon">
+				<div class="ico"></div>
+			</div>
+			<div class="mime-icon">
+				<div class="ico ico-magenta"></div>
+			</div>
+			<div class="mime-icon">
+				<div class="ico ico-yellow"></div>
+			</div>
+			<hr>
+			
+			<h4>With icon</h4>
+			<pre class="small" style="width:100%"><code>@include do-icon($color);</code></pre>			
+			<pre class="small" style="width:100%"><code>&lt;div class=&quot;mime-icon&quot;&gt;
+&nbsp;&nbsp;&lt;div class=&quot;ico ico-blue&quot;&gt;&lt;/div&gt;
+&nbsp;&nbsp;&lt;i class=&quot;material-icons&quot;&gt;icon&lt;/i&gt;
+&lt;/div&gt;</code></pre>			
+			<div class="mime-icon">
+				<div class="ico ico-blue"></div>
+				<i class="material-icons">grade</i>
+			</div>
+			<div class="mime-icon">
+				<div class="ico ico-magenta"></div>
+				<i class="material-icons">favorite</i>
+			</div>
+			<div class="mime-icon">
+				<div class="ico ico-yellow"></div>
+				<i class="material-icons">new_releases</i>
+			</div>
+			<hr>
+			
+			<h4>With file extension option</h4>
+			<pre class="small" style="width:100%"><code>@include do-icon($color, &quot;&quot;, &quot;ABC&quot; );</code></pre>
 			<div class="mime-icon dwf">
 				<div class="ico"></div>
 			</div>
@@ -105,9 +129,15 @@
 			<div class="mime-icon bin">
 				<div class="ico"></div>
 			</div>
-			<br/>
-			<h5>Compressed</h5>
-			<pre><code>@include do-icon(#05ad9d, &quot;&quot;, &quot;ABC&quot;, &quot;&quot;, $zip-icon );</code></pre>
+			<hr>
+
+		</div>
+	</div>
+	<div class="card">
+		<div class="demo">
+		
+			<h4>With SVG shape: Zipped</h4>
+			<pre class="small" style="text-align:center"><code>@include do-icon($color, &quot;&quot;, &quot;ABC&quot;, &quot;&quot;, $zip-icon );</code></pre>
 			<div class="mime-icon compressed zip">
 				<div class="ico"></div>
 			</div>
@@ -120,9 +150,10 @@
 			<div class="mime-icon compressed rar">
 				<div class="ico"></div>
 			</div>
-			<br/>
-			<h5>Audio</h5>
-			<pre><code>@include do-icon(#05ad9d, &quot;&quot;, &quot;ABC&quot;, &quot;&quot;, $music-icon );</code></pre>
+			<hr>
+			
+			<h4>With SVG shape: Audio</h4>
+			<pre class="small" style="text-align:center"><code>@include do-icon($color, &quot;&quot;, &quot;ABC&quot;, &quot;&quot;, $music-icon );</code></pre>
 			<div class="mime-icon audio flac">
 				<div class="ico"></div>
 			</div>
@@ -147,8 +178,10 @@
 			<div class="mime-icon audio wav">
 				<div class="ico"></div>
 			</div>
-			<h5>Text files</h5>
-			<pre><code>@include do-icon(#05ad9d, &quot;&quot;, &quot;ABC&quot;, &quot;&quot;, $text-icon );</code></pre>
+			<hr>
+			
+			<h4>With SVG shape: Text</h4>
+			<pre class="small" style="text-align:center"><code>@include do-icon($color, &quot;&quot;, &quot;ABC&quot;, &quot;&quot;, $text-icon );</code></pre>
 			<div class="mime-icon text csv">
 				<div class="ico"></div>
 			</div>
@@ -173,9 +206,10 @@
 			<div class="mime-icon text php">
 				<div class="ico"></div>
 			</div>
+			<hr>
 
-			<h5>Video files</h5>
-			<p><code>@include do-icon(#05ad9d, &quot;&quot;, &quot;ABC&quot;, &quot;&quot;, $video-icon );</code>
+			<h4>With SVG shape: Video</h4>
+			<pre class="small"><code>@include do-icon(#05ad9d, &quot;&quot;, &quot;ABC&quot;, &quot;&quot;, $video-icon );</code></pre>
 			<div class="mime-icon video avi">
 				<div class="ico"></div>
 			</div>
@@ -200,8 +234,12 @@
 			<div class="mime-icon video wmv">
 				<div class="ico"></div>
 			</div>
-
-			<h5>Variations - white icons</h5>
+		</div>
+	</div>
+	<div class="card">
+		<div class="demo">
+			<h4>Variations - white icons</h4>
+			<pre class="small"><code>.mp3 .ico:after { @include do-icon(#f1f2f2, desaturate(#05ad9d, 15%), &quot;MP3&quot;, #888, $music-icon );}</code></pre>
 			<div class="mime-icon white flac">
 				<div class="ico"></div>
 			</div>
@@ -225,9 +263,11 @@
 			</div>
 			<div class="mime-icon white wav">
 				<div class="ico"></div>
-			</div>	
+			</div>
+			<hr>
 
-			<h5>Variations - dark icons</h5>
+			<h4>Variations - dark icons</h4>
+			<pre class="small"><code>.csv .ico:after { @include do-icon(#3a3b3c, desaturate(#05ad9d, 15%), &quot;CSV&quot;, #ddd, $text-icon );}</code></pre>
 			<div class="mime-icon dark html">
 				<div class="ico"></div>
 			</div>
@@ -252,8 +292,10 @@
 			<div class="mime-icon dark php">
 				<div class="ico"></div>
 			</div>
-			
-			<h5>Variations - dark bend icons</h5>
+			<hr>
+
+			<h4>Variations - dark bend icons</h4>
+			<pre class="small"><code>.avi .ico:after { @include do-icon(#F44336, #3a3b3c, &quot;AVI&quot;, #f1f2f2, $video-icon);}</code></pre>
 			<div class="mime-icon double avi">
 				<div class="ico"></div>
 			</div>
@@ -282,7 +324,21 @@
 	</div>
 	<div class="card">
 		<div class="demo">
-			<h3>Mass generated icons</h3>
+			<h4>Mass generated icons</h4>
+			<pre class="small"><code>$list:
+(test, aac, $music-icon),
+(test, abw, ""),
+(test, arc, ""),
+(test, avi, $video-icon),
+(test, azw, ""),
+(test, bin, $gear-icon),
+(test, bz, $zip-icon),
+(test, bz2, $zip-icon),
+
+...
+
+(test, ics, ""),
+(test, jar, $gear-icon);</code></pre>
 			<div class="mime-icon test aac">
 				<div class="ico"></div>
 			</div>
@@ -342,7 +398,35 @@
 			</div>
 			
 			<hr>
-			
+			<br/>
+
+			<h4>Mass generated icons with icon font</h4>			
+			<pre class="small"><code>$flag: "\E3A0";
+$music: "\E3A1";
+$photo: "\E3B0";
+$picture: "\E3B7";
+$play: "\E037";
+$movie: "\E02C";</code></pre>
+			<pre class="small"><code>$font-icon-list:
+(test2, aac,  "", $audio),
+(test2, abw,  "", $music),
+(test2, arc,  "", $photo),
+(test2, apk,  "", $apk),
+(test2, azw,  "", $picture),
+(test2, avi,  "", $play),
+(test2, bin,  "", $calendar),
+(test2, bz,   "", $zip),
+(test2, bz2,  "", $map),
+(test2, csh,  "", $coffee),
+(test2, css,  "", $movie),
+(test2, csv,  "", $radio),
+(test2, doc,  hsl(210, 90%, 40%), $text),
+(test2, eot,  "", $work),
+(test2, epub, "", $epub),
+
+...
+
+(test3, txt,  "", $text);</code></pre>			
 			<div class="mime-icon test2 aac">
 				<div class="ico"></div>
 			</div>
