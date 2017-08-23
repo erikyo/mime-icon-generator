@@ -50,14 +50,15 @@ pre {
 	display:block;
 }
 code {
-	display: inline-block;
-	text-align:left;
+	display: block;
+	text-align: left;
 	background: #41a69a;
 	color: #fff;
 	border-radius: 4px;
 	border: 1px solid #48726d;
 	padding: 12px 24px;
 	margin: 16px 12px 32px;
+	overflow-x: hidden;
 }
 pre.small code {
 	margin: 12px 0;
