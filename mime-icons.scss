@@ -1,9 +1,15 @@
-//VARS
-$icon-color: #F1F2F2;
-$icon-edge-color: "";
-$font-size: 39.5;
-$icon-container-size: 110px;
-$style: "default"; // possible values: default || dark || light || double
+// CONFIGURATION
+$icon-container-size: 110px; // the size of the icons
+$icon-edge-color: ""; // the default edge color of the icon
+$font-size: 39.5; // the font size of the text incapsulated inside the svg icon relative to the 200px height of the original svg 
+
+$shape-color: #F1F2F2; // the color of the shape inside the icon (if any)
+$shape-color-positive: #666;  // the color of the shape when the icon have a positive background (es. white)
+$dark-color: #3a3b3c; // background color of the icons in the dark theme (or the ribbon color in the "double" $style theme  )
+$icon-shadow: ""; // or "drop-shadow( 0 2px 2px rgba(0, 0, 0, 0.25) );" without quotes
+
+$style: ""; // icon theme -> possible values: default || dark || light || double
+
 
 //
 // Import icons
@@ -43,6 +49,7 @@ $icon-colours:
 	#5277de,
 	#6963c5;
 
+  
 // Icons (the corrispong ascii)
 
 $settings: "\E8B8";
@@ -130,7 +137,7 @@ $icon-list:
 
 ////// DO-ICON MIXIN USAGE
 /////
-///// -> do-icon($background-color, $edge-color, $text, $text-color, $icon, $icon-color);
+///// -> do-icon($background-color, $edge-color, $text, $text-color, $icon, $shape-color);
 ///// +> @include do-icon(#009688, lighten(#009688, 20%), "", "");
 ///
 // $background-color: the background of the document image (A color is expected - REQUIRED)
@@ -159,8 +166,9 @@ $icon-list:
 	display: inline-block;
 	vertical-align:top;
 	position: relative;
+
 	.ico {
-	position:relative;
+    position:relative;
 
 		&:before{
 			position: absolute;
@@ -172,7 +180,7 @@ $icon-list:
 			content:'';
 			font-family: 'Material Icons';
 			font-size: $icon-container-size / 4.2;
-			color: $icon-color;
+			color: $shape-color;
 			opacity: 0.8;		
 		}
 		
@@ -189,11 +197,33 @@ $icon-list:
 			@include do-icon();
 		}
 	}
-	
-
-	.ico-magenta:after { @include do-icon(#d9006c);}
-	.ico-yellow:after {	@include do-icon(#f9ca15);}
-	.ico-blue:after { @include do-icon(#0d75dd);}
+  
+  &.light {
+		.ico:before{
+      color: $shape-color;
+    }
+		.ico:after {
+			filter: drop-shadow( 0 2px 2px rgba(0, 0, 0, 0.25) );
+		}  
+  }
+  
+  &.dark {
+		.ico:before{
+      color: $shape-color;
+    }
+		.ico:after {
+			filter: "";
+		}    
+  }
+  
+  &.double {
+		.ico:before{
+      color: $shape-color;
+    }
+		.ico:after {
+			filter: drop-shadow( 0 1px 1px rgba(0, 0, 0, 0.25) );
+		} 
+  }
 	
 	i.material-icons {
 		position: absolute;
@@ -201,7 +231,7 @@ $icon-list:
 		left: 0;
 		right: 0;
 		font-size: 28px;
-		color: $icon-color;
+		color: $shape-color;
 		opacity: 0.8;
 	}
 }
@@ -211,24 +241,26 @@ $icon-list:
 //
 $colors-number: length($icon-colours);
 $actual-icon-color: 1;
+$font-color: $shape-color; // default 
 
-@each $mimitype, $filetype, $icon-background-color, $icon in $icon-list {
+@each $mimitype, $filetype, $icon-primary-color, $icon in $icon-list {
 		
-	@if (type-of($icon-background-color) != 'color') and ($icon-background-color) {  // if background isn't a color
+	@if (type-of($icon-primary-color) != 'color' and ($icon-primary-color) ) {  // if background isn't a color or is null
+    
     @if ($style == "dark") {
-      $icon-background-color: #3a3b3c;
-      $icon-edge-color: nth($icon-colours, $actual-icon-color); // the color is a color from the $icon-colours array
-    
-    } @elseif ($style == "light") {
-      $icon-background-color: #F1F2F2;
+      $icon-edge-color: nth($icon-colours, $actual-icon-color);   // the color is a color from the $icon-colours array
+      $icon-primary-color: $dark-color;
+
+    } @else if ($style == "light") {
       $icon-edge-color: nth($icon-colours, $actual-icon-color); 
-    
-    } @elseif ($style == "double") {
-      $icon-background-color: nth($icon-colours, $actual-icon-color);
-      $icon-edge-color: "";
+      $icon-primary-color: #F1F2F2;
+
+    } @else if ($style == "double") {
+      $icon-primary-color: nth($icon-colours, $actual-icon-color);
+      $icon-edge-color: $dark-color;
       
     } @else {
-      $icon-background-color: nth($icon-colours, $actual-icon-color); 
+      $icon-primary-color: nth($icon-colours, $actual-icon-color); 
       $icon-edge-color: "";
     }
 		
@@ -237,44 +269,68 @@ $actual-icon-color: 1;
 		} @else {
 			$actual-icon-color: 1;
 		}
-    
-	}
+
+	} @else {  // else  background is a color or isn't null
+ 
+    @if ($style == "dark") {
+      $icon-edge-color: $icon-primary-color;
+      $icon-primary-color: $dark-color;
   
+    } @else if ($style == "light") {
+      $icon-edge-color: $icon-primary-color; 
+      $icon-primary-color: #F1F2F2;
+    
+    } @else if ($style == "double") {
+      $icon-primary-color: $icon-primary-color;
+      $icon-edge-color: $dark-color;
+      
+    } @else {
+      $icon-primary-color: $icon-primary-color; 
+      $icon-edge-color: "";
+    } 
+  }
+  
+  @if ($style == "light") {
+    $font-color: $shape-color-positive;
+    $icon-shadow: "drop-shadow( 0 2px 2px rgba(0, 0, 0, 0.25) );";
+  } @else if ($style == "double") {
+    $font-color: $shape-color;
+    $icon-shadow: "drop-shadow( 0 2px 2px rgba(0, 0, 0, 0.25) );";
+  } @else {
+    $font-color:  $shape-color;
+    $icon-shadow: "inherit";
+  }
+ 
 	// STYLE
 	.mime-icon.ico-#{$mimitype} .ico:after,
   .mime-icon.ico-#{$filetype} .ico:after {
-		@include do-icon($icon-background-color, $icon-edge-color, to-upper-case($filetype), "", $icon );
+		@include do-icon($icon-primary-color, $icon-edge-color, to-upper-case($filetype), $font-color, $icon );
+    filter: #{$icon-shadow};
 	}
 	.mime-icon.ico-#{$mimitype} .ico:before,
   .mime-icon.ico-#{$filetype} .ico:before {
 		content:$icon;
+    color: #{$font-color};
 	}
 }
 
 
 // HARDCODED styles
-//
-//
+// This part serves for the demo and can be safely canceled
+// However, if you need a particular icon you can write the code like in the examples below
 //
 
 .mime-icon {
+	.ico-magenta:after { @include do-icon(#d9006c);}
+	.ico-yellow:after {	@include do-icon(#f9ca15);}
+	.ico-blue:after { @include do-icon(#0d75dd);}
+
 	&.abc .ico:after { @include do-icon(desaturate(hsla(15, 90%, 55%, 1), 15%), "", "ABC");}
 	&.def .ico:after  { @include do-icon(desaturate(hsla(80, 75%, 47%, 1), 15%), "", "DEF");}
 	&.ghi .ico:after  { @include do-icon(desaturate(hsla(270, 60%, 55%, 1), 15%), "", "GHI");}
 
 	&.light {
-		// if you want to chage the color of a svg shape 
-		// you must change the variables inside the class scope 
-		// then execute the mixin like usual. 
-		// variables will remain inside the scope where are declarated
-		//
-		$icon-color: #666666;
-		.ico:before{
-      color: $icon-color;
-    }
-		.ico:after {
-			filter: drop-shadow( 0 2px 2px rgba(0, 0, 0, 0.25) );
-		}
+		$shape-color: #666666;
 		&.ico-mp3 .ico:after { @include do-icon(#f1f2f2, desaturate(#05ad9d, 15%), "MP3", #888, "" );}
 		&.ico-pcm .ico:after { @include do-icon(#f1f2f2,desaturate(#8BC34A, 15%), "PCM", #888, "" );}
 		&.ico-ogg .ico:after { @include do-icon(#f1f2f2,desaturate(#CDDC39, 15%), "OGG", #888, "" );}
@@ -283,33 +339,29 @@ $actual-icon-color: 1;
 		&.ico-aiff .ico:after { @include do-icon(#f1f2f2,desaturate(#E91E63, 15%), "AIFF", #888, "" );}
 		&.ico-wma .ico:after { @include do-icon(#f1f2f2,desaturate(#9C27B0, 15%), "WMA", #888, "" );}
 		&.ico-html .ico:after { @include do-icon(#f1f2f2,desaturate(#3F51B5, 15%), "HTML", #888, "" );}
-    
 		&.ico-js .ico:after { @include do-icon(#f1f2f2,desaturate(#9C27B0, 15%), "JS", #888, "" );}
 	}
 	
 	&.dark {
-		&.ico-csv .ico:after { @include do-icon(#3a3b3c, desaturate(#05ad9d, 15%), "CSV", #ddd, "" );}
-		&.ico-txt .ico:after { @include do-icon(#3a3b3c,desaturate(#8BC34A, 15%), "TXT", #ddd, "" );}
-		&.ico-rtf .ico:after { @include do-icon(#3a3b3c,desaturate(#CDDC39, 15%), "RTF", #ddd, "" );}
-		&.ico-doc .ico:after { @include do-icon(#3a3b3c,desaturate(#FFC107, 15%), "DOC", #ddd, "" );}
-		&.ico-docx .ico:after { @include do-icon(#3a3b3c,desaturate(#F44336, 15%), "DOCX", #ddd, "" );}
-		&.ico-flac .ico:after { @include do-icon(#3a3b3c,desaturate(#E91E63, 15%), "FLAC", #ddd, "" );}
-		&.ico-js  .ico:after { @include do-icon(#3a3b3c,desaturate(#9C27B0, 15%), "JS", #ddd, "" );}
-		&.ico-php  .ico:after { @include do-icon(#3a3b3c,desaturate(#3F51B5, 15%), "PHP", #ddd, "" );}
+		&.ico-csv .ico:after { @include do-icon($dark-color, desaturate(#05ad9d, 15%), "CSV", #ddd, "" );}
+		&.ico-txt .ico:after { @include do-icon($dark-color,desaturate(#8BC34A, 15%), "TXT", #ddd, "" );}
+		&.ico-rtf .ico:after { @include do-icon($dark-color,desaturate(#CDDC39, 15%), "RTF", #ddd, "" );}
+		&.ico-doc .ico:after { @include do-icon($dark-color,desaturate(#FFC107, 15%), "DOC", #ddd, "" );}
+		&.ico-docx .ico:after { @include do-icon($dark-color,desaturate(#F44336, 15%), "DOCX", #ddd, "" );}
+		&.ico-flac .ico:after { @include do-icon($dark-color,desaturate(#E91E63, 15%), "FLAC", #ddd, "" );}
+		&.ico-js  .ico:after { @include do-icon($dark-color,desaturate(#9C27B0, 15%), "JS", #ddd, "" );}
+		&.ico-php  .ico:after { @include do-icon($dark-color,desaturate(#3F51B5, 15%), "PHP", #ddd, "" );}
 	}
 
 	&.double {
-		.ico:after {
-			filter: drop-shadow( 0 0 2px rgba(0, 0, 0, 0.2) );
-		}		
-		&.ico-avi .ico:after { @include do-icon(#F44336, #3a3b3c, "AVI", #f1f2f2, "");}
-		&.ico-mp4 .ico:after { @include do-icon(#8BC34A, #3a3b3c, "MP4", #f1f2f2, "");}
-		&.ico-mkv .ico:after { @include do-icon(#bdcc2b, #3a3b3c, "MKV", #f1f2f2, "");}
-		&.ico-mpeg .ico:after{ @include do-icon(#FFC107, #3a3b3c, "MPEG", #f1f2f2, "");}
-		&.ico-mov .ico:after { @include do-icon(#05ad9d, #3a3b3c, "MOV", #f1f2f2, "");}
-		&.ico-flv .ico:after { @include do-icon(#E91E63, #3a3b3c, "FLV", #f1f2f2, "");}
-		&.ico-swf .ico:after { @include do-icon(#9C27B0, #3a3b3c, "SWF", #f1f2f2, "");}
-		&.ico-wmv .ico:after { @include do-icon(#8BC34A, #3a3b3c, "WMV", #f1f2f2, "");}
+		&.ico-avi .ico:after { @include do-icon(#F44336, $dark-color, "AVI", #f1f2f2, "");}
+		&.ico-mp4 .ico:after { @include do-icon(#8BC34A, $dark-color, "MP4", #f1f2f2, "");}
+		&.ico-mkv .ico:after { @include do-icon(#bdcc2b, $dark-color, "MKV", #f1f2f2, "");}
+		&.ico-mpeg .ico:after{ @include do-icon(#FFC107, $dark-color, "MPEG", #f1f2f2, "");}
+		&.ico-mov .ico:after { @include do-icon(#05ad9d, $dark-color, "MOV", #f1f2f2, "");}
+		&.ico-flv .ico:after { @include do-icon(#E91E63, $dark-color, "FLV", #f1f2f2, "");}
+		&.ico-swf .ico:after { @include do-icon(#9C27B0, $dark-color, "SWF", #f1f2f2, "");}
+		&.ico-wmv .ico:after { @include do-icon(#8BC34A, $dark-color, "WMV", #f1f2f2, "");}
 	}
 }
 

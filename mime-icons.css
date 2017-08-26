@@ -62,12 +62,21 @@
       background-position: center;
       background-repeat: no-repeat;
       background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#888" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5"></text><polygon fill="#bbbbbb" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
-  .mime-icon .ico-magenta:after {
-    background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#d9006c" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5"></text><polygon fill="#ff409f" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
-  .mime-icon .ico-yellow:after {
-    background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#f9ca15" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5"></text><polygon fill="#fce178" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
-  .mime-icon .ico-blue:after {
-    background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#0d75dd" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5"></text><polygon fill="#5ba8f5" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  .mime-icon.light .ico:before {
+    color: #F1F2F2; }
+  .mime-icon.light .ico:after {
+    -webkit-filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.25)); }
+  .mime-icon.dark .ico:before {
+    color: #F1F2F2; }
+  .mime-icon.dark .ico:after {
+    -webkit-filter: "";
+    filter: ""; }
+  .mime-icon.double .ico:before {
+    color: #F1F2F2; }
+  .mime-icon.double .ico:after {
+    -webkit-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.25)); }
   .mime-icon i.material-icons {
     position: absolute;
     top: 33%;
@@ -79,323 +88,452 @@
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-aac .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#b1375e" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">AAC</text><polygon fill="#d57996" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#b1375e" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">AAC</text><polygon fill="#d57996" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-aac .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-abw .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#db4f42" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">ABW</text><polygon fill="#eb9f98" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#db4f42" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">ABW</text><polygon fill="#eb9f98" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-abw .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-arc .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#f29b00" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">ARC</text><polygon fill="#ffc359" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#f29b00" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">ARC</text><polygon fill="#ffc359" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-arc .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-apk .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#bfcb3e" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">APK</text><polygon fill="#dae18e" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#bfcb3e" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">APK</text><polygon fill="#dae18e" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-apk .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-azw .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#8db157" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">AZW</text><polygon fill="#bcd19d" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#8db157" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">AZW</text><polygon fill="#bcd19d" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-azw .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-avi .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#50abb5" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">AVI</text><polygon fill="#98cdd3" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#50abb5" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">AVI</text><polygon fill="#98cdd3" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-avi .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-bin .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#5277de" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">BIN</text><polygon fill="#a8baee" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#5277de" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">BIN</text><polygon fill="#a8baee" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-bin .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-bz .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#6963c5" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">BZ</text><polygon fill="#b0ade1" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#6963c5" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">BZ</text><polygon fill="#b0ade1" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-bz .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-bz2 .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#b1375e" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">BZ2</text><polygon fill="#d57996" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#b1375e" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">BZ2</text><polygon fill="#d57996" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-bz2 .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-csh .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#db4f42" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">CSH</text><polygon fill="#eb9f98" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#db4f42" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">CSH</text><polygon fill="#eb9f98" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-csh .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-css .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#f29b00" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">CSS</text><polygon fill="#ffc359" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#f29b00" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">CSS</text><polygon fill="#ffc359" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-css .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-csv .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#bfcb3e" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">CSV</text><polygon fill="#dae18e" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#bfcb3e" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">CSV</text><polygon fill="#dae18e" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-csv .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-doc .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#0a66c2" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">DOC</text><polygon fill="#3d99f5" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#0a66c2" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">DOC</text><polygon fill="#3d99f5" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-doc .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-eot .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#8db157" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">EOT</text><polygon fill="#bcd19d" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#8db157" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">EOT</text><polygon fill="#bcd19d" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-eot .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-epub .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#50abb5" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">EPUB</text><polygon fill="#98cdd3" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#50abb5" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">EPUB</text><polygon fill="#98cdd3" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-epub .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-gif .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#5277de" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">GIF</text><polygon fill="#a8baee" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#5277de" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">GIF</text><polygon fill="#a8baee" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-gif .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-html .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#6963c5" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">HTML</text><polygon fill="#b0ade1" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#6963c5" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">HTML</text><polygon fill="#b0ade1" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-html .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-ico .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#b1375e" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">ICO</text><polygon fill="#d57996" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#b1375e" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">ICO</text><polygon fill="#d57996" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-ico .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-ics .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#db4f42" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">ICS</text><polygon fill="#eb9f98" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#db4f42" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">ICS</text><polygon fill="#eb9f98" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-ics .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-usb .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#f29b00" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">USB</text><polygon fill="#ffc359" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#f29b00" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">USB</text><polygon fill="#ffc359" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-usb .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-js .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#bfcb3e" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">JS</text><polygon fill="#dae18e" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#bfcb3e" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">JS</text><polygon fill="#dae18e" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-js .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-jar .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#8db157" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">JAR</text><polygon fill="#bcd19d" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#8db157" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">JAR</text><polygon fill="#bcd19d" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-jar .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-txt .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#50abb5" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">TXT</text><polygon fill="#98cdd3" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#50abb5" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">TXT</text><polygon fill="#98cdd3" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-txt .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-php .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#5277de" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">PHP</text><polygon fill="#a8baee" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#5277de" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">PHP</text><polygon fill="#a8baee" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-php .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-flac .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#6963c5" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">FLAC</text><polygon fill="#b0ade1" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#6963c5" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">FLAC</text><polygon fill="#b0ade1" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-flac .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-wma .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#b1375e" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">WMA</text><polygon fill="#d57996" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#b1375e" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">WMA</text><polygon fill="#d57996" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-wma .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-mp3 .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#db4f42" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">MP3</text><polygon fill="#eb9f98" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#db4f42" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">MP3</text><polygon fill="#eb9f98" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-mp3 .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-pcm .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#f29b00" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">PCM</text><polygon fill="#ffc359" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#f29b00" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">PCM</text><polygon fill="#ffc359" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-pcm .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-aiff .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#bfcb3e" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">AIFF</text><polygon fill="#dae18e" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#bfcb3e" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">AIFF</text><polygon fill="#dae18e" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-aiff .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-ogg .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#8db157" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">OGG</text><polygon fill="#bcd19d" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#8db157" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">OGG</text><polygon fill="#bcd19d" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-ogg .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-wav .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#50abb5" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">WAV</text><polygon fill="#98cdd3" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#50abb5" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">WAV</text><polygon fill="#98cdd3" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-wav .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-rtf .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#5277de" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">RTF</text><polygon fill="#a8baee" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#5277de" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">RTF</text><polygon fill="#a8baee" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-rtf .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-docx .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#6963c5" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">DOCX</text><polygon fill="#b0ade1" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#6963c5" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">DOCX</text><polygon fill="#b0ade1" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-docx .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-mp4 .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#b1375e" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">MP4</text><polygon fill="#d57996" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#b1375e" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">MP4</text><polygon fill="#d57996" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-mp4 .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-mov .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#db4f42" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">MOV</text><polygon fill="#eb9f98" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#db4f42" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">MOV</text><polygon fill="#eb9f98" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-mov .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-flv .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#f29b00" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">FLV</text><polygon fill="#ffc359" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#f29b00" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">FLV</text><polygon fill="#ffc359" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-flv .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-swf .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#bfcb3e" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">SWF</text><polygon fill="#dae18e" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#bfcb3e" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">SWF</text><polygon fill="#dae18e" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-swf .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-mpeg .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#8db157" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">MPEG</text><polygon fill="#bcd19d" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#8db157" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">MPEG</text><polygon fill="#bcd19d" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-mpeg .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-wmv .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#50abb5" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">WMV</text><polygon fill="#98cdd3" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#50abb5" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">WMV</text><polygon fill="#98cdd3" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-wmv .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
 
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-mkv .ico:after {
-  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#5277de" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">MKV</text><polygon fill="#a8baee" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#5277de" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">MKV</text><polygon fill="#a8baee" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>');
+  -webkit-filter: inherit;
+  filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
 .mime-icon.ico-mkv .ico:before {
-  content: ""; }
+  content: "";
+  color: #F1F2F2; }
+
+.mime-icon .ico-magenta:after {
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#d9006c" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5"></text><polygon fill="#ff409f" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+
+.mime-icon .ico-yellow:after {
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#f9ca15" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5"></text><polygon fill="#fce178" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
+
+.mime-icon .ico-blue:after {
+  background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#0d75dd" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5"></text><polygon fill="#5ba8f5" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
 
 .mime-icon.abc .ico:after {
   background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#e26136" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">ABC</text><polygon fill="#efa78f" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
@@ -405,13 +543,6 @@
 
 .mime-icon.ghi .ico:after {
   background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#8c59c0" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#F1F2F2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">GHI</text><polygon fill="#bfa3dc" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
-
-.mime-icon.light .ico:before {
-  color: #666666; }
-
-.mime-icon.light .ico:after {
-  -webkit-filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.25));
-  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.25)); }
 
 .mime-icon.light.ico-mp3 .ico:after {
   background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#f1f2f2" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#888" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">MP3</text><polygon fill="#12a092" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
@@ -463,10 +594,6 @@
 
 .mime-icon.dark.ico-php .ico:after {
   background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#3a3b3c" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#ddd" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">PHP</text><polygon fill="#515ea3" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
-
-.mime-icon.double .ico:after {
-  -webkit-filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.2));
-  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.2)); }
 
 .mime-icon.double.ico-avi .ico:after {
   background-image: url('data:image/svg+xml;utf8,<svg class="icon-model" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"> <path fill="#F44336" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>  <text transform="matrix(1 0 0 1 100 171)" class="icon-text" text-anchor="middle" width="120" height="50" opacity="0.95" fill="#f1f2f2" font-family="Tahoma-Bold" style="font-family: &quot;Myriad Pro&quot;, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;text-shadow: 0 1px 0 rgba(0,0,0,0.05);" font-size="39.5">AVI</text><polygon fill="#3a3b3c" points="112.6,0 171,58.3 112.6,58.3"/><polygon opacity="0.1" fill="#010202" points="170.9,116.5 112.6,58.3 170.9,58.3"/></svg>'); }
