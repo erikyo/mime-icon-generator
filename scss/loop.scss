@@ -5,7 +5,7 @@ $colors-number: length($icon-colours);
 $actual-icon-color: 1;
 
 
-@each $mimitype, $filetype, $icon-primary-color, $icon in $icon-list {
+@each $filetype, $icon-primary-color, $icon in $icon-list {
   
  @if (type-of($icon-primary-color) != 'color' and ($icon-primary-color) ) {  // if background isn't a color or is null
     
@@ -41,7 +41,7 @@ $actual-icon-color: 1;
     } @else if ($style == "light") {
       $icon-edge-color: $icon-primary-color; 
       $icon-primary-color: #F1F2F2;
-    
+
     } @else if ($style == "double") {
       $icon-edge-color: $icon-primary-color;
       $icon-primary-color: $dark-color;
@@ -65,12 +65,10 @@ $actual-icon-color: 1;
   
 
   // APPLY STYLE
-  .mime-icon.ico-#{$mimitype} .ico:before,
   .mime-icon.ico-#{$filetype} .ico:before {
     content:$icon;
     color: $font-color;
   }
-  .mime-icon.ico-#{$mimitype} .ico:after,
   .mime-icon.ico-#{$filetype} .ico:after {
     @include do-icon($icon-primary-color, $icon-edge-color, to-upper-case($filetype), $font-color, $icon );
     filter: #{$icon-shadow};
