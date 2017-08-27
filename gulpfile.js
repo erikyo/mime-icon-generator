@@ -24,11 +24,18 @@ var pkg = JSON.parse(fs.readFileSync('package.json'));
 // Task options
 var opts = {
   destPath: './',
+  buildPath: './dist/',
   concatName: 'mime-icons.css',
 
   autoprefixer: {
-    browsers: ['last 1 versions'],
-    cascade: false
+    dev: {
+      browsers: ['> 1%', 'last 2 versions', 'Firefox > 20', 'iOS > 5', 'ie > 7'],
+      cascade: false
+    },
+    build: {
+      browsers: ['last 1 versions'],
+      cascade: false
+    }
   },
   
   minRename: {
@@ -43,7 +50,6 @@ var opts = {
   cssnano: {reduceIdents: {keyframes: false}},
 
   banner: [
-    '@charset "UTF-8";\n',
     '/*!',
     ' * <%= name %> -<%= homepage %>',
     ' * Version - <%= version %>',
@@ -64,17 +70,14 @@ gulp.task('build', function () {
     
     .pipe(sass(opts.sass))
     .on('error', notify.onError('Error: <%= error.message %>'))
-    .pipe(header(opts.banner, pkg))
-    .pipe(gulp.dest('./dist/'))
+    .pipe(gulp.dest(opts.buildPath))
     .pipe(postcss([
-      autoprefixer({
-        browsers: ['> 1%', 'last 2 versions', 'Firefox > 20', 'iOS > 5', 'ie > 7'],
-        cascade: false
-      }),
+      autoprefixer(opts.autoprefixer.build),
       cssnano(opts.cssnano)
     ]))
+    .pipe(header(opts.banner, pkg))
     .pipe(rename(opts.minRename))
-    .pipe(gulp.dest('./dist/'));
+    .pipe(gulp.dest(opts.buildPath));
 });
   
 gulp.task('sass', function () {
@@ -85,7 +88,7 @@ gulp.task('sass', function () {
     .pipe(sass(opts.sass))
     .on('error', notify.onError('Error: <%= error.message %>'))
     .pipe(postcss([
-      autoprefixer(opts.autoprefixer)
+      autoprefixer(opts.autoprefixer.dev)
     ]))    
     .pipe(sourcemaps.write(opts.destPath))
     .pipe(gulp.dest(opts.destPath));
@@ -93,9 +96,9 @@ gulp.task('sass', function () {
 });
 
 gulp.task('compress', function() {
-  gulp.src('./dist/mime-icons.min.css')
+  gulp.src(opts.buildPath + 'mime-icons.min.css')
     .pipe(gzip())
-    .pipe(gulp.dest('./dist/'));
+    .pipe(gulp.dest(opts.buildPath));
 });
 
 gulp.task('watch', function () {

@@ -60,7 +60,7 @@ $actual-icon-color: 1;
     $icon-shadow: "drop-shadow( 0 2px 2px rgba(0, 0, 0, 0.25) );";
   } @else {
     $font-color:  $shape-color;
-    $icon-shadow: "inherit";
+    $icon-shadow: inherit;
   }
   
 
