@@ -70,7 +70,7 @@ $actual-icon-color: 1;
     color: $font-color;
   }
   .mime-icon.ico-#{$filetype} .ico:after {
-    @include do-icon($icon-primary-color, $icon-edge-color, to-upper-case($filetype), $font-color, $icon );
+    @include do-icon($icon-primary-color, $icon-edge-color, str-slice(to-upper-case($filetype), 0, 5), $font-color, $icon );
     filter: #{$icon-shadow};
   }
   
