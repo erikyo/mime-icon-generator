@@ -1,3 +1,47 @@
 # mime-icon-generator
 
 DEMO: https://erikyo.github.io/mime-icon-generator/
+
+![alt text](https://raw.githubusercontent.com/erikyo/mime-icon-generator/master/demo/demo.jpg)
+
+#### Create easily **all the icons you need in supersharp SVG format!**
+
+Configuration is very fast ... in the $icon-list array you have to enter some parameters like file extension, color (if you want a custom tone), and shape... icons will be automatically generated and you recall them easily in your site or in your app using the class .mime-icon.ico-`$fileextension`.
+
+All svg icons are merged into a single css sheet and this allows for a very lightweight file: **~600 icon gzipped size is only 16.8kb! less than one 256x256 png icon.**
+
+* * *
+
+## USAGE
+
+### 1. Default mixin
+
+There are two ways to make a way to make an icon... the first is with the **mixin**.
+
+Its basic form is this `"@include do-icon(**$color**)"`.
+
+You can specify a color that will be assigned to the icon if no the default color is used (in the Config Section of the scss sheet)
+
+    .ico-myico .ico:after {
+          @include do-icon($color);
+    }
+
+You can recall your newly generated icon whit this code
+
+    <div class="mime-icon">
+      <div class="ico-myico"></div>
+    </div>
+    
+### 2. Mass generated icons with icon font
+
+**But to generate many icons at once?** I prepared a `@for` loop that loops all the items in the $icon-list:
+
+    $icon-list:
+    ...
+    (application, abc,  "", $music),
+    ...;
+
+*   The **first two arguments** used for the **class** (in the example will be `.mime-ico.ico-application` and `.mime-ico.ico-abc`)
+*   The **second** argument is also used for the **text displayed in the icon** (so if you do not want the text you can use the first argument to "link" the class)
+*   The **third** argument is optional: if it is not passed (or is not a color) will be used a color from the array called $icon-colors https://github.com/erikyo/mime-icon-generator/blob/master/scss/generator-colors.scss
+*   The **fourth** argument is the icon ascii. You can pass one of the variables of "scss/generator-vars.scss" https://github.com/erikyo/mime-icon-generator/blob/master/scss/generator-vars.scss. Remember to load the font fonts you like and edit this set of variables that will be very convenient to you

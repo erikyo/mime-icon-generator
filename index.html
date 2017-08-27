@@ -62,7 +62,7 @@
         <pre class="small"><code>.ico-myico .ico:after {
       @include do-icon($color);
 }</code></pre>
-        <p>You cam recall your newly generated icon whit this code</p>
+        <p>You can recall your newly generated icon whit this code</p>
         <pre class="small"><code>&lt;div class=&quot;mime-icon&quot;&gt;
 &nbsp;&nbsp;&lt;div class=&quot;ico-myico&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -213,37 +213,12 @@
 (application, abc,  "", $music),
 ...;</code></pre>
         <ul>
-        <li>The <b>first two arguments</b> used for the <b>class</b> in the example will be .mime-ico.ico-application and .mime-ico.ico-abc</li>
+        <li>The <b>first two arguments</b> used for the <b>class</b> (in the example will be .mime-ico.ico-application and .mime-ico.ico-abc)</li>
         <li>The <b>second</b> argument is also used for the <b>text displayed in the icon</b> (so if you do not want the text you can use the first argument to "link" the class)</li>
-        <li>The <b>third</b> argument is optional: it is the <b>color of the icon</b> if it is not passed (or is not a color) is used a color of the array called $ icon-colors</li>
-        <li>The <b>fourth</b> argument is the icon ascii you can pass the variable of the ones mentioned earlier</li>
+        <li>The <b>third</b>  argument is optional: it is the <b>color of the icon</b> if it is not passed (or is not a color) will be used a color from the array called $icon-colors</li>
+        <li>The <b>fourth</b> argument is the icon ascii. You can pass one of the variables of "scss/generator-vars.scss" https://github.com/erikyo/mime-icon-generator/blob/master/scss/generator-vars.scss. Remember to load the font fonts you like and edit this set of variables that will be very convenient to you in "scss/fonts.scss"</li>
         </ul>
-        
-        <pre class="small"><code>$icon-list:
-(audio, aac,  "", $audio),
-(application, abw,  "", $music),
-(application, arc,  "", $photo),
-(document, doc,  #ff0000, $text),
-(app, apk,  "", $apk),
-(application, azw,  "", $picture),
-(application, eot,  "", $work),
-(book, epub, "", $epub),
-
-...
-
-(text, txt,  "", $text);</code></pre>
-        <p>To insert the icon you have to insert the <b>corresponding ascii...</b><br/>
-        I have prepared a set of variables with the various forms already ready to use</p>
-        <p>Remember to load the font fonts you like and edit this set of variables that will be very convenient to you</p>
-        <pre class="small"><code>$flag: "\E3A0";
-$music: "\E3A1";
-$photo: "\E3B0";
-$picture: "\E3B7";
-$play: "\E037";
-...
-$movie: "\E02C";</code></pre>
-
-        <div class="mime-icon ico-3dm">
+        <div class="mime-icon ico-3dm">
           <div class="ico"></div>
         </div>
         <div class="mime-icon ico-3dmf">
