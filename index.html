@@ -12,7 +12,10 @@
       <p>Create easily<b> all the icons you need in supersharp SVG format!</b></p>
     </header>
     <div class="card" style="min-height:460px;">
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve" style="	display: inline-block;width: 320px;float: left;margin: 60px 50px 0 0;">
+
+      <h4 class="title">MIME ICONS</h4> 
+
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve" class="card-image">  
         <g id="icon">
           <path fill="#cccccc" d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z"/>
           <g>
@@ -48,7 +51,7 @@
           <rect x="112.6" display="inline" opacity="0.3" fill="none" stroke="#888888" stroke-width="1" stroke-miterlimit="10" width="58.3" height="58.3"/>
         </g>
       </svg>
-      <h4 style="margin: 60px 0 0;color:#673AB7;">MIME ICONS</h4>      
+     
       <p>Create easily<b> all the icons you need in supersharp SVG format!</b></p>
       <p>Configuration is very fast ... in the $icon-list array you have to enter some parameters like file extension, color (if you want a custom tone), and shape... icons will be automatically generated and you recall them easily in your site or in your app using the class .mime-icon.ico-<code style="display:inline">$fileextension</code>.</p>
       <p><br/>All svg icons are merged into a single css sheet and this allows for a very lightweight file: <b>~600 icon gzipped size is only 16.8kb! less than one 256x256 png icon.</b></p>
@@ -57,7 +60,7 @@
       <div class="demo">
         <h4>Default mixin</h4>
         <p>There are two ways to make a way to make an icon... the first is with the mixin.</p>
-        <p> Its basic form is this <code style="display:inline">&quot;@include do-icon(<b style="color:#673AB7">$color</b>)&quot;</code>.</p>
+        <p> Its basic form is this <code style="display:initial;white-space: initial;">&quot;@include do-icon(<b style="color:#673AB7">$color</b>)&quot;</code>.</p>
         <p>You can specify a color that will be assigned to the icon if no the default color is used (in the Config Section of the scss sheet)</p>
         <pre class="small"><code>.ico-myico .ico:after {
       @include do-icon($color);
@@ -77,7 +80,7 @@
         </div>
         <hr>
         <h4>File extension option</h4>
-        <p>This mixin has a bit of options: the second one is to insert a file extension (directly inside svg)...<br/></b7> to do this you have to add <code style="display:inline">@include do-icon($color, "", <b style="color:#673AB7">$file-extension</b>);</code> to the mixin</p>
+        <p>This mixin has a bit of options: the second one is to insert a file extension (directly inside svg)...<br/></b7> to do this you have to add <code  style="display:initial;white-space: initial;">@include do-icon($color, "", <b style="color:#673AB7">$file-extension</b>);</code> to the mixin</p>
         <pre class="small"><code>@include do-icon($color, &quot;&quot;, &quot;ABC&quot; );</code></pre>
         <div class="mime-icon abc">
           <div class="ico"></div>
@@ -1999,9 +2002,6 @@
     </div>
     <!-- From here onwards, you will find what is needed for this demo page -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-
-
     <link rel="stylesheet" href="demo/style.css">
-    <script src="demo/scripts.js"></script>
   </body>
 </html>

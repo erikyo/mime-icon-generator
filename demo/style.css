@@ -7,6 +7,7 @@ html, body {
 	text-align:center;
 	font-size: 16px;
 	font-weight: 300;
+	overflow-x:hidden;
 }
 header {
 	background: #673AB7;
@@ -52,13 +53,14 @@ hr {
 	border-top: 2px solid #ddd;
 }
 pre {
-	max-width:100%;
-	display: table;
+	width: 100%;
+	display: block;
 	width: auto;
 	margin: auto;
 }
 code {
-	display: inline-block;
+	display: -webkit-inline-box;
+	width: 100%;
 	text-align: left;
 	background: #41a69a;
 	color: #fff;
@@ -74,13 +76,14 @@ pre.small code {
 	background: #dcdcdc;
 	border: 1px solid #cccccc;
 	color: #738481;
+	box-sizing: border-box;
 }
 p code {
 	background: #999;
 	border: 1px solid #777;
 	margin: 0 0 10px;
 	padding: 2px 8px;
-  white-space: nowrap;
+  	white-space: nowrap;
 }
 .align-left {
 	text-align:left;
@@ -105,7 +108,71 @@ div.card {
 	background: white;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
+
+h4.title {
+	margin: 60px 0 0;
+	color:#673AB7;
+}
 div.credits {
 	font-size:18px;
 	color: #999;
+}
+.card-image {
+	display: inline-block;
+	width: 320px;
+	float: left;
+	margin: 60px 50px 30px 0;
+}
+
+@media (max-width: 1024px) {
+	div.card, div.credits {
+		width:calc(100% - 24px);
+		padding: 12px 12px 24px;
+		box-sizing:border-box;
+		margin: 0 12px;
+	}
+	.demo {
+		padding: 20px;
+	}
+	.card-image {
+		width: 100%;
+		height: 150px;
+		margin: 30px 50px 30px 0;
+	}
+	h4.title {
+		margin: 40px 0 0;
+	}
+	.mime-icon .ico:after {
+      width: 86px;
+      height: 86px;
+	}
+	.mime-icon .ico:before {
+	  font-size:22px;
+	  top: 31px;
+	}
+
+	.mime-icon i.material-icons {
+		font-size:22px;
+	}
+}
+@media (max-width:600px) {
+	header { padding: 16px;margin: 0 0 24px;}
+	html,body { font-size: 16px;}
+	h1 {font-size: 36px;}
+	header p {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 340px) {
+	html,body { font-size: 15px;}
+	h1 {font-size: 42px;}
+	.mime-icon .ico:after {
+      width: 64px;
+      height: 64px;
+	}
+	.mime-icon .ico:before {
+	  font-size:15px;
+	  top: 25px;
+	}
 }
