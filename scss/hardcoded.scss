@@ -1,0 +1,73 @@
+// HARDCODED styles
+// This part serves for the demo and can be safely canceled
+// However, if you need a particular icon you can write the code like in the examples below
+//
+
+.mime-icon {
+	.ico.ico-magenta:after { @include do-icon(#d9006c);}
+	.ico.ico-yellow:after {	@include do-icon(#f9ca15);}
+	.ico.ico-blue:after { @include do-icon(#0d75dd);}
+
+	&.abc .ico:after { @include do-icon(desaturate(hsla(15, 90%, 55%, 1), 15%), "", "ABC");}
+	&.def .ico:after  { @include do-icon(desaturate(hsla(80, 75%, 47%, 1), 15%), "", "DEF");}
+	&.ghi .ico:after  { @include do-icon(desaturate(hsla(270, 60%, 55%, 1), 15%), "", "GHI");}
+
+	&.light {
+    &.ico-mp3 .ico:after { @include do-icon(#f1f2f2, desaturate(#05ad9d, 15%), "MP3", #888, "" );}
+		&.ico-pcm .ico:after { @include do-icon(#f1f2f2,desaturate(#8BC34A, 15%), "PCM", #888, "" );}
+		&.ico-ogg .ico:after { @include do-icon(#f1f2f2,desaturate(#CDDC39, 15%), "OGG", #888, "" );}
+		&.ico-wav .ico:after { @include do-icon(#f1f2f2,desaturate(#FFC107, 15%), "WAV", #888, "" );}
+		&.ico-aac .ico:after { @include do-icon(#f1f2f2,desaturate(#F44336, 15%), "AAC", #888, "" );}
+		&.ico-aiff .ico:after { @include do-icon(#f1f2f2,desaturate(#E91E63, 15%), "AIFF", #888, "" );}
+		&.ico-wma .ico:after { @include do-icon(#f1f2f2,desaturate(#9C27B0, 15%), "WMA", #888, "" );}
+		&.ico-html .ico:after { @include do-icon(#f1f2f2,desaturate(#3F51B5, 15%), "HTML", #888, "" );}
+		&.ico-js .ico:after { @include do-icon(#f1f2f2,desaturate(#9C27B0, 15%), "JS", #888, "" );}
+	}
+	
+	&.dark {
+		&.ico-csv .ico:after { @include do-icon($dark-color, desaturate(#05ad9d, 15%), "CSV", #ddd, "" );}
+		&.ico-txt .ico:after { @include do-icon($dark-color,desaturate(#8BC34A, 15%), "TXT", #ddd, "" );}
+		&.ico-rtf .ico:after { @include do-icon($dark-color,desaturate(#CDDC39, 15%), "RTF", #ddd, "" );}
+		&.ico-doc .ico:after { @include do-icon($dark-color,desaturate(#FFC107, 15%), "DOC", #ddd, "" );}
+		&.ico-docx .ico:after { @include do-icon($dark-color,desaturate(#F44336, 15%), "DOCX", #ddd, "" );}
+		&.ico-flac .ico:after { @include do-icon($dark-color,desaturate(#E91E63, 15%), "FLAC", #ddd, "" );}
+		&.ico-js  .ico:after { @include do-icon($dark-color,desaturate(#9C27B0, 15%), "JS", #ddd, "" );}
+		&.ico-php  .ico:after { @include do-icon($dark-color,desaturate(#3F51B5, 15%), "PHP", #ddd, "" );}
+	}
+
+	&.double {
+    
+		&.ico-avi .ico{
+      &:before { color: #F44336 !important;}
+      &:after { @include do-icon($dark-color, #F44336, "AVI",  #F44336, "");}
+    }
+		&.ico-mp4 .ico {
+      &:before { color: #8BC34A !important;}
+      &:after { @include do-icon($dark-color, #8BC34A, "MP4",  #8BC34A, "");}
+    }
+		&.ico-mkv .ico {
+      &:before { color: #bdcc2b !important;}
+      &:after { @include do-icon($dark-color, #bdcc2b, "MKV",  #bdcc2b, "");}
+    }
+		&.ico-mpeg .ico {
+      &:before { color: #FFC107 !important;}
+      &:after{ @include do-icon($dark-color, #FFC107, "MPEG", #FFC107, "");}
+    }
+		&.ico-mov .ico {
+      &:before { color: #05ad9d !important;}
+      &:after { @include do-icon($dark-color, #05ad9d, "MOV",  #05ad9d, "");}
+    }
+		&.ico-flv .ico {
+      &:before { color: #E91E63 !important;}
+      &:after { @include do-icon($dark-color, #E91E63, "FLV",  #E91E63, "");}
+    }
+		&.ico-swf .ico {
+      &:before { color: #9C27B0 !important;}
+      &:after { @include do-icon($dark-color, #9C27B0, "SWF",  #9C27B0, "");}
+    }
+		&.ico-wmv .ico {
+      &:before { color: #8BC34A !important;}
+      &:after { @include do-icon($dark-color, #8BC34A, "WMV",  #8BC34A, "");}
+    }
+	}
+}

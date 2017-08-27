@@ -1,0 +1,79 @@
+////// "Each" loop with font icon
+//////
+//////
+$colors-number: length($icon-colours);
+$actual-icon-color: 1;
+
+
+@each $mimitype, $filetype, $icon-primary-color, $icon in $icon-list {
+  
+ @if (type-of($icon-primary-color) != 'color' and ($icon-primary-color) ) {  // if background isn't a color or is null
+    
+    @if ($style == "dark") {
+      $icon-edge-color: nth($icon-colours, $actual-icon-color);   // the color is a color from the $icon-colours array
+      $icon-primary-color: $dark-color;
+
+    } @else if ($style == "light") {
+      $icon-edge-color: nth($icon-colours, $actual-icon-color); 
+      $icon-primary-color: #F1F2F2;
+
+    } @else if ($style == "double") {
+      $icon-primary-color: $dark-color;
+      $icon-edge-color: nth($icon-colours, $actual-icon-color);
+      
+    } @else {
+      $icon-primary-color: nth($icon-colours, $actual-icon-color); 
+      $icon-edge-color: "";
+    }
+  
+  @if ($actual-icon-color < $colors-number  ) { // Prepare the next color then increase the index counter 
+   $actual-icon-color: $actual-icon-color + 1; 
+  } @else {
+   $actual-icon-color: 1;
+  }
+
+ } @else {  // else  background is a color or isn't null
+ 
+    @if ($style == "dark") {
+      $icon-edge-color: $icon-primary-color;
+      $icon-primary-color: $dark-color;
+  
+    } @else if ($style == "light") {
+      $icon-edge-color: $icon-primary-color; 
+      $icon-primary-color: #F1F2F2;
+    
+    } @else if ($style == "double") {
+      $icon-edge-color: $icon-primary-color;
+      $icon-primary-color: $dark-color;
+
+    } @else {
+      $icon-primary-color: $icon-primary-color; 
+      $icon-edge-color: "";
+    } 
+  }
+
+  @if ($style == "light") {
+    $font-color: $shape-color-positive;
+    $icon-shadow: "drop-shadow( 0 2px 2px rgba(0, 0, 0, 0.25) );";
+  } @else if ($style == "double") {
+    $font-color:  $icon-edge-color;
+    $icon-shadow: "drop-shadow( 0 2px 2px rgba(0, 0, 0, 0.25) );";
+  } @else {
+    $font-color:  $shape-color;
+    $icon-shadow: "inherit";
+  }
+  
+
+  // APPLY STYLE
+  .mime-icon.ico-#{$mimitype} .ico:before,
+  .mime-icon.ico-#{$filetype} .ico:before {
+    content:$icon;
+    color: $font-color;
+  }
+  .mime-icon.ico-#{$mimitype} .ico:after,
+  .mime-icon.ico-#{$filetype} .ico:after {
+    @include do-icon($icon-primary-color, $icon-edge-color, to-upper-case($filetype), $font-color, $icon );
+    filter: #{$icon-shadow};
+  }
+  
+}

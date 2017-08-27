@@ -88,6 +88,10 @@ p code {
 .align-center {
 	text-align:center;
 }
+.demo {
+	background-color: rgba(0,0,0,0.1);
+	padding: 40px;
+}
 div.card, div.credits {
 	width:calc(100% - 64px);
 	box-sizing: border-box;

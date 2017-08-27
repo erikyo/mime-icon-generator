@@ -1,4 +1,14 @@
 @charset "UTF-8";
+
+/*!
+ * mime-icon-generator -https://github.com/erikyo/mime-icon-generator
+ * Version - 0.9.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2017 Codekraft Studio - info@codekraft.it
+ */
+
+@charset "UTF-8";
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
@@ -167,15 +177,12 @@
   .mime-icon.light .ico:before {
     color: #666666 !important; }
   .mime-icon.light .ico:after {
-    -webkit-filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.25));
     filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.25)); }
   .mime-icon.dark .ico:before {
     color: #F1F2F2 !important; }
   .mime-icon.dark .ico:after {
-    -webkit-filter: "";
     filter: ""; }
   .mime-icon.double .ico:after {
-    -webkit-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.25));
     filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.25)); }
   .mime-icon i.material-icons {
     position: absolute;
@@ -194,7 +201,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-aac .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#b1375e"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">AAC</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#d57996"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -205,7 +211,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-abw .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#db4f42"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">ABW</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#eb9f98"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -216,7 +221,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-arc .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#f29b00"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">ARC</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#ffc359"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -227,7 +231,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-apk .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#bfcb3e"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">APK</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#dae18e"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -238,7 +241,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-azw .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#8db157"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">AZW</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#bcd19d"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -249,7 +251,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-avi .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#50abb5"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">AVI</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#98cdd3"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -260,7 +261,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-bin .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#5277de"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">BIN</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#a8baee"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -271,7 +271,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-bz .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#6963c5"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">BZ</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#b0ade1"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -282,7 +281,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-bz2 .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#b1375e"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">BZ2</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#d57996"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -293,7 +291,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-csh .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#db4f42"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">CSH</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#eb9f98"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -304,7 +301,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-css .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#f29b00"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">CSS</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#ffc359"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -315,7 +311,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-csv .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#bfcb3e"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">CSV</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#dae18e"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -326,7 +321,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-doc .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#0a66c2"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">DOC</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#3d99f5"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -337,7 +331,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-eot .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#8db157"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">EOT</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#bcd19d"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -348,7 +341,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-epub .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#50abb5"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">EPUB</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#98cdd3"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -359,7 +351,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-gif .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#5277de"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">GIF</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#a8baee"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -370,7 +361,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-html .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#6963c5"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">HTML</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#b0ade1"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -381,7 +371,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-ico .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#b1375e"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">ICO</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#d57996"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -392,7 +381,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-ics .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#db4f42"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">ICS</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#eb9f98"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -403,7 +391,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-usb .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#f29b00"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">USB</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#ffc359"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -414,7 +401,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-js .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#bfcb3e"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">JS</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#dae18e"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -425,7 +411,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-jar .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#8db157"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">JAR</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#bcd19d"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -436,7 +421,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-txt .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#50abb5"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">TXT</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#98cdd3"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -447,7 +431,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-php .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#5277de"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">PHP</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#a8baee"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -458,7 +441,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-flac .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#6963c5"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">FLAC</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#b0ade1"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -469,7 +451,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-wma .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#b1375e"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">WMA</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#d57996"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -480,7 +461,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-mp3 .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#db4f42"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">MP3</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#eb9f98"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -491,7 +471,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-pcm .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#f29b00"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">PCM</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#ffc359"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -502,7 +481,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-aiff .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#bfcb3e"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">AIFF</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#dae18e"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -513,7 +491,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-ogg .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#8db157"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">OGG</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#bcd19d"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -524,7 +501,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-wav .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#50abb5"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">WAV</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#98cdd3"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -535,7 +511,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-rtf .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#5277de"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">RTF</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#a8baee"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -546,7 +521,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-docx .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#6963c5"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">DOCX</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#b0ade1"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -557,7 +531,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-mp4 .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#b1375e"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">MP4</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#d57996"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -568,7 +541,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-mov .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#db4f42"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">MOV</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#eb9f98"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -579,7 +551,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-flv .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#f29b00"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">FLV</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#ffc359"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -590,7 +561,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-swf .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#bfcb3e"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">SWF</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#dae18e"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -601,7 +571,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-mpeg .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#8db157"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">MPEG</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#bcd19d"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -612,7 +581,6 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-wmv .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#50abb5"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">WMV</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#98cdd3"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
 
 .mime-icon.ico-mime-icons .ico:before,
@@ -623,7 +591,4 @@
 .mime-icon.ico-mime-icons .ico:after,
 .mime-icon.ico-mkv .ico:after {
   background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#5277de"/>  <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#F1F2F2" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="39.5" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">MKV</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#a8baee"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
-  -webkit-filter: inherit;
   filter: inherit; }
-
-/*# sourceMappingURL=mime-icons.css.map */

@@ -1,21 +1,22 @@
 // Utilities
-var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
+var gzip = require('gulp-gzip');
 var fs = require('fs');
 
 // Gulp
 var gulp = require('gulp');
 
 // Gulp plugins
-var concat = require('gulp-concat');
-var gutil = require('gulp-util');
 var header = require('gulp-header');
+var watch = require('gulp-watch');
 var sass = require('gulp-sass');
-var postcss = require('gulp-postcss');
 var rename = require('gulp-rename');
 var runSequence = require('run-sequence');
 var sourcemaps = require('gulp-sourcemaps');
-var watchSass = require("gulp-watch-sass");
+var notify = require("gulp-notify");
+
 
 // Misc/global vars
 var pkg = JSON.parse(fs.readFileSync('package.json'));
@@ -29,15 +30,17 @@ var opts = {
     browsers: ['last 1 versions'],
     cascade: false
   },
-
+  
   minRename: {
     suffix: '.min'
   },
-
+  
   sass: {
     outputStyle: 'nested',
-	errLogToConsole: true
+    errLogToConsole: true
   },
+  
+  cssnano: {reduceIdents: {keyframes: false}},
 
   banner: [
     '@charset "UTF-8";\n',
@@ -55,30 +58,54 @@ var opts = {
 // Gulp task definitions
 // ----------------------------
 
-gulp.task('default', function() {
-  runSequence('style');
-});
+gulp.task('build', function () {
 
-gulp.task('style', function () {
- return gulp.src('*.scss')
-   .pipe(sass(opts.sass))
-   .pipe(concat(opts.concatName))
-   .pipe(postcss([
+  return gulp.src('./mime-icons.scss')
+    
+    .pipe(sass(opts.sass))
+    .on('error', notify.onError('Error: <%= error.message %>'))
+    .pipe(header(opts.banner, pkg))
+    .pipe(gulp.dest('./dist/'))
+    .pipe(postcss([
+      autoprefixer({
+        browsers: ['> 1%', 'last 2 versions', 'Firefox > 20', 'iOS > 5', 'ie > 7'],
+        cascade: false
+      }),
+      cssnano(opts.cssnano)
+    ]))
+    .pipe(rename(opts.minRename))
+    .pipe(gulp.dest('./dist/'));
+});
+  
+gulp.task('sass', function () {
+  
+  return style = gulp.src('./mime-icons.scss')
+  
+    .pipe(sourcemaps.init())
+    .pipe(sass(opts.sass))
+    .on('error', notify.onError('Error: <%= error.message %>'))
+    .pipe(postcss([
       autoprefixer(opts.autoprefixer)
-    ]))
-   .pipe(header(opts.banner, pkg))
-   .pipe(gulp.dest(opts.destPath))
-   .pipe(postcss([
-      cssnano({reduceIdents: {keyframes: false}})
-    ]))
-   .pipe(rename(opts.minRename))   
-   .pipe(gulp.dest(opts.destPath));
+    ]))    
+    .pipe(sourcemaps.write(opts.destPath))
+    .pipe(gulp.dest(opts.destPath));
+
 });
 
-gulp.task("sass:watch", () => watchSass([
-  "./mime-icons.scss"
-])
-	.pipe(sourcemaps.init())
-	.pipe(sass(opts.sass).on('error', sass.logError))
-	.pipe(sourcemaps.write('.'))
-	.pipe(gulp.dest(opts.destPath)));
+gulp.task('compress', function() {
+  gulp.src('./dist/mime-icons.min.css')
+    .pipe(gzip())
+    .pipe(gulp.dest('./dist/'));
+});
+
+gulp.task('watch', function () {
+  watch('./**/*.scss', function () {
+    gulp.start('sass');
+  });
+});
+
+gulp.task('default', ['watch']);
+
+gulp.task('finalize', function(callback) {
+  return runSequence('build','compress');
+});

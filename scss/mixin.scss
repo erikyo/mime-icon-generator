@@ -1,0 +1,19 @@
+////// DO-ICON MIXIN USAGE
+/////
+///// -> do-icon($background-color, $edge-color, $text, $text-color, $icon, $shape-color);
+///// +> @include do-icon(#009688, lighten(#009688, 20%), "", "");
+///
+// $background-color: the background of the document image (A color is expected - REQUIRED)
+// $edge-color: the color of corner edge
+// $text: the type of mime type
+// $text-color: the color of the text containing file extension (A color is expected)
+// $icon: inject an icon inside the document model
+
+@mixin do-icon($background-color: #888, $edge-color:null, $text: null, $text-color:"#F1F2F2", $icon:null ) {
+	
+	@if (type-of($edge-color) != 'color') { $edge-color: lighten($background-color, 20%)}
+	@if (type-of($text-color) != 'color') { $text-color: "#F1F2F2"}
+  @if (type-of($text) != 'string') and ($text) { $text: "@#!"}
+
+	background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#{$background-color}"/> #{$icon} <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#{$text-color}" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="#{$font-size}" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">#{$text}</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#{$edge-color}"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
+}
