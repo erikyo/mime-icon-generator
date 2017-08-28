@@ -29,11 +29,11 @@ var opts = {
 
   autoprefixer: {
     dev: {
-      browsers: ['> 1%', 'last 2 versions', 'Firefox > 20', 'iOS > 5', 'ie > 7'],
+      browsers: ['last 1 versions'],
       cascade: false
     },
     build: {
-      browsers: ['last 1 versions'],
+      browsers: ['> 1%', 'last 2 versions'],
       cascade: false
     }
   },
