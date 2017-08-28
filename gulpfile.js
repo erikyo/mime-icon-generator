@@ -25,7 +25,6 @@ var pkg = JSON.parse(fs.readFileSync('package.json'));
 var opts = {
   destPath: './',
   buildPath: './dist/',
-  concatName: 'mime-icons.css',
 
   autoprefixer: {
     dev: {
@@ -107,8 +106,8 @@ gulp.task('watch', function () {
   });
 });
 
-gulp.task('default', ['watch']);
-
 gulp.task('finalize', function(callback) {
   return runSequence('build','compress');
 });
+
+gulp.task('default', ['finalize']);
