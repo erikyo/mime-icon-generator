@@ -1,4 +1,4 @@
-# mime-icon-generator [![Build Status](https://travis-ci.org/erikyo/mime-icon-generator.svg?branch=master)](https://travis-ci.org/erikyo/mime-icon-generator) ![devDependencies Status](https://david-dm.org/erikyo/mime-icon-generator.svg)
+# mime-icon-generator [![Build Status](https://travis-ci.org/erikyo/mime-icon-generator.svg?branch=master)](https://travis-ci.org/erikyo/mime-icon-generator) [![devDependencies Status](https://david-dm.org/erikyo/mime-icon-generator/dev-status.svg)](https://david-dm.org/erikyo/mime-icon-generator?type=dev)
 
 DEMO: https://erikyo.github.io/mime-icon-generator/
 
