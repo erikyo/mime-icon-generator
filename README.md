@@ -44,3 +44,6 @@ You can recall your newly generated icon whit this code
 *   The **first argument** used for the **class** (in the example will be `.mime-ico.ico-application` and `.mime-ico.ico-abc`). it's also used for the **filetype** inside the icon 
 *   The **second** argument is optional: if it is not passed (or is not a color) will be used a color from the array called $icon-colors https://github.com/erikyo/mime-icon-generator/blob/master/scss/generator-colors.scss
 *   The **third** argument is the icon ascii. You can pass one of the variables of "scss/generator-vars.scss" https://github.com/erikyo/mime-icon-generator/blob/master/scss/generator-vars.scss. Remember to load the font fonts you like and edit this set of variables that will be very convenient to you
+
+#### Utilities - google sheet docs
+https://docs.google.com/spreadsheets/d/15Xg_7qReclvRpHDXnVL2go9T-QntLAZJj58KdY4YURU/edit?usp=sharing
