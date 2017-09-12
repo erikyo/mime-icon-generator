@@ -12,9 +12,9 @@ All svg icons are merged into a single css sheet and this allows for a very ligh
 
 * * *
 ## INSTALLATION
-
+```
 git clone https://github.com/erikyo/mime-icon-generator.git && cd mime-icon-generator && npm install
-
+```
 **gulp watch** - sass watch (witj sourcemap and autoprefixer)
 
 **gulp finalize** - (default) like gulp watch but the generated files are moved to the dist folder. a gzipped version of the minified one is also created)
