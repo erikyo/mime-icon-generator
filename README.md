@@ -8,7 +8,7 @@ DEMO: https://erikyo.github.io/mime-icon-generator/
 
 Configuration is very fast ... in the $icon-list array you have to enter some parameters like file extension, color (if you want a custom tone), and shape... icons will be automatically generated and you recall them easily in your site or in your app using the class .mime-icon.ico-`$fileextension`.
 
-All svg icons are merged into a single css sheet and this allows for a very lightweight file: **~600 icon gzipped size is only 16.8kb! less than one 256x256 png icon.**
+All svg icons are merged into a single css sheet and this allows for a very lightweight file: **~450 icon gzipped size is only 13kb! less than one 256x256 png icon.**
 
 * * *
 ## INSTALLATION

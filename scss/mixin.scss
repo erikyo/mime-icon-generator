@@ -9,11 +9,20 @@
 // $text-color: the color of the text containing file extension (A color is expected)
 // $icon: inject an icon inside the document model
 
-@mixin do-icon($background-color: #888, $edge-color:null, $text: null, $text-color:"#F1F2F2", $icon:null ) {
-	
-	@if (type-of($edge-color) != 'color') { $edge-color: lighten($background-color, 20%)}
-	@if (type-of($text-color) != 'color') { $text-color: "#F1F2F2"}
-  @if (type-of($text) != 'string') and ($text) { $text: "@#!"}
+// IF WOU WANT CHANGE THE DEFAULT ICON
+// #{$background-color} -> the icon main color
+// #{$edge-color} 			-> the icon secondary color
+// #{$font-size} 				-> the size of the file extension text (exe, jpg, gif, etc)
+// #{$icon} 						-> the ascii code of the icon font
+// #{$text} 						-> the file extension variable
 
-	background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg class="icon-model" enable-background="new 0 0 200 200" viewBox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="M112.6,58.3V0.1H32.9C30.7,0.1,29,1.8,29,4 v192.2c0,2.1,1.7,3.9,3.9,3.9h134.2c2.1,0,3.9-1.7,3.9-3.9V58.3H112.6z" fill="#{$background-color}"/> #{$icon} <text class="icon-text" transform="translate(100 171)" width="120" height="50" fill="#{$text-color}" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="#{$font-size}" font-weight="bold" opacity=".95" text-anchor="middle" style="text-shadow:0 1px 0 rgba(0,0,0,0.05)">#{$text}</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#{$edge-color}"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" fill="#010202" opacity=".1"/></svg>');
+@mixin do-icon($background-color: #888, $edge-color:null, $text: null, $text-color:#F1F2F2, $icon:null ) {
+	
+	@if (type-of($edge-color) != 'color') { $edge-color: lighten($background-color, 15%)}
+	@if (type-of($text-color) != 'color') { $text-color: #F1F2F2}
+  @if (type-of($text) != 'string') and ($text) { $text: "@#!"}
+	
+	$ico: '<svg xmlns="http://www.w3.org/2000/svg" class="icon-model" viewBox="0 0 200 200">#{$icon} <path d="M171 192.4V58.2l-58.4 0V0H36.5C32.4 0 29 3.4 29 7.6h0v184.9h0c0 4.2 3.4 7.6 7.6 7.6h126.9C167.6 200 171 196.6 171 192.4z" fill="#{$background-color}"/><text class="icon-text" transform="translate(100 171)" width="120" height="50" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="#{$font-size}" style="fill:#{$text-color};font-weight:bold;text-anchor:middle;text-shadow:0">#{$text}</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#{$edge-color}"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" style="fill:#010202;opacity:0.1"/></svg>';
+
+	background-image: url('data:image/svg+xml;utf8,#{$ico}');
 }
