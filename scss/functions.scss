@@ -1,0 +1,7 @@
+@function colorEncode($color) {
+  @if (str-index(ie-hex-str($color), "#") == 1 and str-length(ie-hex-str($color)) == 9 and type-of($color) == 'color') {
+    @return '%23' + str-slice(ie-hex-str($color), 4, 9);
+  }
+
+  @return $color ;
+}

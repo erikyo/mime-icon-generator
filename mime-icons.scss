@@ -2,6 +2,7 @@
 $icon-container-size: 110px; // the size of the icons
 $icon-edge-color: ""; // the default edge color of the icon
 $font-size: 38; // the font size of the text incapsulated inside the svg icon relative to the 200px height of the original svg 
+$font-family: "Myriad, Tahoma-Bold, sans-serif"; // the font size of the text incapsulated inside the svg icon relative to the 200px height of the original svg
 
 
 // ATTENTION write hex in extended notation
@@ -15,6 +16,9 @@ $font-color: $shape-color; // default
 //
 //
 $style: ""; // icon theme -> possible values: default || dark || light || double
+
+// Import hex color conversion function
+@import "scss/functions";
 
 // Import icons
 @import "scss/fonts";
@@ -562,8 +566,5 @@ $icon-list:
 
 ////// "Each" n°1 icon with Google font icon
 //////
-//////
+
 @import "scss/loop";
-
-
-

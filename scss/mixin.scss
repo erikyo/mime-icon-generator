@@ -19,10 +19,14 @@
 @mixin do-icon($background-color: #888, $edge-color:null, $text: null, $text-color:#F1F2F2, $icon:null ) {
 	
 	@if (type-of($edge-color) != 'color') { $edge-color: lighten($background-color, 15%)}
-	@if (type-of($text-color) != 'color') { $text-color: #F1F2F2}
+	@if (type-of($text-color) != 'color') { $text-color: "#F1F2F2"}
   @if (type-of($text) != 'string') and ($text) { $text: "@#!"}
-	
-	$ico: '<svg xmlns="http://www.w3.org/2000/svg" class="icon-model" viewBox="0 0 200 200">#{$icon} <path d="M171 192.4V58.2l-58.4 0V0H36.5C32.4 0 29 3.4 29 7.6h0v184.9h0c0 4.2 3.4 7.6 7.6 7.6h126.9C167.6 200 171 196.6 171 192.4z" fill="#{$background-color}"/><text class="icon-text" transform="translate(100 171)" width="120" height="50" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="#{$font-size}" style="fill:#{$text-color};font-weight:bold;text-anchor:middle;text-shadow:0">#{$text}</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#{$edge-color}"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" style="fill:#010202;opacity:0.1"/></svg>';
+
+	$background-color : colorEncode($background-color);
+	$text-color : colorEncode($text-color);
+	$edge-color : colorEncode($edge-color);
+
+	$ico: '<svg xmlns="http://www.w3.org/2000/svg" class="icon-model" viewBox="0 0 200 200">#{$icon} <path d="M171 192.4V58.2l-58.4 0V0H36.5C32.4 0 29 3.4 29 7.6h0v184.9h0c0 4.2 3.4 7.6 7.6 7.6h126.9C167.6 200 171 196.6 171 192.4z" fill="#{$background-color}"/><text class="icon-text" transform="translate(100 171)" width="120" height="50" font-family="#{$font-family}" font-size="#{$font-size}" style="fill:#{$text-color};font-weight:bold;text-anchor:middle;text-shadow:0">#{$text}</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#{$edge-color}"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" style="fill:%23010202;opacity:0.1"/></svg>';
 
 	background-image: url('data:image/svg+xml;utf8,#{$ico}');
 }

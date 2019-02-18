@@ -1,6 +1,6 @@
 {
   "name": "mime-icon-generator",
-  "version": "0.9.1",
+  "version": "1.0.0",
   "main": "mime-icon-generator",
   "repository": {
     "type": "git",
@@ -13,20 +13,22 @@
   "license": "MIT",
   "style": "./mime-icons.css",
   "devDependencies": {
-    "autoprefixer": "^7.1.2",
-    "cssnano": "^3.5.1",
-    "gulp": "^3.9.1",
+    "autoprefixer": "^9.4.7",
+    "cssnano": "^4.1.10",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
     "gulp-gzip": "^1.4.0",
-    "gulp-header": "^1.7.1",
+    "gulp-header": "^2.0.7",
     "gulp-notify": "^3.0.0",
-    "gulp-postcss": "^7.0.0",
+    "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
+    "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.0",
-    "gulp-watch": "^4.3.11",
+    "gulp-watch": "^5.0.1",
     "run-sequence": "^2.1.0"
   },
   "spm": {
     "main": "./mime-icons.css"
-  }
+  },
+  "dependencies": {}
 }

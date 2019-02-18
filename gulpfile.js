@@ -1,21 +1,20 @@
 // Utilities
-var cssnano = require('cssnano');
-var postcss = require('gulp-postcss');
-var autoprefixer = require('autoprefixer');
-var gzip = require('gulp-gzip');
-var fs = require('fs');
+const sourcemaps = require('gulp-sourcemaps');
+const cssnano = require('cssnano');
+const postcss = require('gulp-postcss');
+const autoprefixer = require("autoprefixer");
+const gzip = require('gulp-gzip');
+const fs = require('fs');
 
 // Gulp
-var gulp = require('gulp');
+const gulp = require('gulp');
 
 // Gulp plugins
-var header = require('gulp-header');
-var watch = require('gulp-watch');
-var sass = require('gulp-sass');
-var rename = require('gulp-rename');
-var runSequence = require('run-sequence');
-var sourcemaps = require('gulp-sourcemaps');
-var notify = require("gulp-notify");
+const header = require('gulp-header');
+const sass = require('gulp-sass');
+const del = require("del");
+const rename = require('gulp-rename');
+const notify = require("gulp-notify");
 
 
 // Misc/global vars
@@ -24,7 +23,7 @@ var pkg = JSON.parse(fs.readFileSync('package.json'));
 // Task options
 var opts = {
   destPath: './',
-  buildPath: './dist/',
+  buildPath: './dist',
 
   autoprefixer: {
     dev: {
@@ -63,10 +62,21 @@ var opts = {
 // Gulp task definitions
 // ----------------------------
 
-gulp.task('build', function () {
+// Clean assets
+function clean() {
+  return del(["./dist/**"]);
+}
 
-  return gulp.src('./mime-icons.scss')
-    
+function compress() {
+  return gulp
+  .src(opts.buildPath + '/mime-icons.min.css')
+  .pipe(gzip())
+  .pipe(gulp.dest(opts.buildPath));
+}
+
+function buildStyle() {
+  return gulp
+    .src("./mime-icons.scss")
     .pipe(sass(opts.sass))
     .on('error', notify.onError('Error: <%= error.message %>'))
     .pipe(gulp.dest(opts.buildPath))
@@ -77,37 +87,33 @@ gulp.task('build', function () {
     .pipe(header(opts.banner, pkg))
     .pipe(rename(opts.minRename))
     .pipe(gulp.dest(opts.buildPath));
-});
-  
-gulp.task('sass', function () {
-  
-  return style = gulp.src('./mime-icons.scss')
-  
+}
+
+function css() {
+  return gulp
+    .src("./mime-icons.scss")
     .pipe(sourcemaps.init())
     .pipe(sass(opts.sass))
     .on('error', notify.onError('Error: <%= error.message %>'))
     .pipe(postcss([
       autoprefixer(opts.autoprefixer.dev)
-    ]))    
+    ]))
+    .pipe(header(opts.banner, pkg))
+    .pipe(gulp.dest(opts.destPath))
     .pipe(sourcemaps.write(opts.destPath))
     .pipe(gulp.dest(opts.destPath));
+}
 
-});
+// Watch files
+function watchFiles() {
+  gulp.watch("./**/*.scss", css);
+}
 
-gulp.task('compress', function() {
-  gulp.src(opts.buildPath + 'mime-icons.min.css')
-    .pipe(gzip())
-    .pipe(gulp.dest(opts.buildPath));
-});
+const build = gulp.series(clean, buildStyle, compress);
+const watch = gulp.series(watchFiles);
 
-gulp.task('watch', function () {
-  watch('./**/*.scss', function () {
-    gulp.start('sass');
-  });
-});
-
-gulp.task('finalize', function(callback) {
-  return runSequence('build','compress');
-});
-
-gulp.task('default', ['finalize']);
+exports.css = css;
+exports.clean = clean;
+exports.build = build;
+exports.watch = watch;
+exports.default = build;

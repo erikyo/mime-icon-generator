@@ -54,5 +54,11 @@ You can recall your newly generated icon whit this code
 *   The **second** argument is optional: if it is not passed (or is not a color) will be used a color from the array called $icon-colors https://github.com/erikyo/mime-icon-generator/blob/master/scss/generator-colors.scss
 *   The **third** argument is the icon ascii. You can pass one of the variables of "scss/generator-vars.scss" https://github.com/erikyo/mime-icon-generator/blob/master/scss/generator-vars.scss. Remember to load the font fonts you like and edit this set of variables that will be very convenient to you
 
+#### Versions 
+* 0.9.0 - Initial test release 
+* 0.9.1 - Style fixes 
+* 0.9.2 - Style fixes 
+* 1.0.0 - First release. Fix colors into nested svg and come with some updates (like gulp v4) 
+
 #### Utilities - google sheet docs (can be useful to mass generate your icons)
 https://docs.google.com/spreadsheets/d/15Xg_7qReclvRpHDXnVL2go9T-QntLAZJj58KdY4YURU/edit?usp=sharing
